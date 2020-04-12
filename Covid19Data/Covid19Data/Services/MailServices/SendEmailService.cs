@@ -34,6 +34,7 @@ namespace Covid19Data.Services.MailServices
             string emailSubject = _configuration.GetSection("Email:subject").Value;
             string emailBody = _configuration.GetSection("Email:body").Value;
             string emailPassword = _configuration.GetSection("Email:password").Value;
+            string emailHost = _configuration.GetSection("Email:host").Value;
             string date = DateTime.UtcNow.ToString("ddMMyyyy");
 
             try
@@ -62,7 +63,7 @@ namespace Covid19Data.Services.MailServices
                     Credentials = new NetworkCredential(emailOrigin, emailPassword),
 
                     DeliveryMethod = SmtpDeliveryMethod.Network,
-                    Host = "smtp.live.com",
+                    Host = emailHost,
                     EnableSsl = true,
                     Port = 587,
                     Timeout = 10_000
