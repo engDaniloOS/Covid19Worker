@@ -13,3 +13,5 @@ e sempre que há atualizações, consolida em arquivo xlsx, salva uma cópia no 
   -> Host do serviço (exemplo: hotmail - "smtp.live.com", gmail - "smtp.gmail.com")
   
 - É necessário cadastrar no banco de dados os e-mails destinatários.
+
+- O arquivo em xlsx (excel), será salvo na área de trabalho (para ambientes windows).
