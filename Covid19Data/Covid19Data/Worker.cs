@@ -35,9 +35,10 @@ namespace Covid19Data
                 int minutos = int.Parse(_configuration.GetSection("Tempo").Value);
 
                 await _businessService.DataProcess();
-                await Task.Delay(1000 * 60 * minutos, stoppingToken);
-
+             
                 _logger.LogInformation("Worker finished to run at: {time}", DateTimeOffset.Now);
+                
+                await Task.Delay(1000 * 60 * minutos, stoppingToken);
             }
         } 
         #endregion
