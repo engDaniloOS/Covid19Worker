@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Covid19Data": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
