@@ -1,5 +1,4 @@
 ﻿using Covid19Data.Domain.Entities;
-using Covid19Data.Domain.Repositories;
 using Covid19Data.Domain.Services;
 using Microsoft.Extensions.Logging;
 using System;
